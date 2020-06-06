@@ -1,5 +1,4 @@
 statements = []
-questions = ['How', 'Why', 'What', 'Where', 'When', 'Which', 'Who', 'Whom']
 
 def capitalize(user_input):
     words = user_input.split(' ')
@@ -7,6 +6,7 @@ def capitalize(user_input):
     return words
 
 def punctuate(words):
+    questions = ['How', 'Why', 'What', 'Where', 'When', 'Which', 'Who']
     if(words[0] in questions): 
         words[-1] += '?'
     else:
